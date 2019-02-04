@@ -1,0 +1,87 @@
+/* I have made this CSS file and applied it to all 6 main pages of the website.  I have done this for each page because the styling relates only to the background, heading, and navigation bar, which will be the same for every page.  All of the sizing is done in % and not px so the elements will change size depending on the size of the browser window. (except border radius, this is in px to give rounded edges.*/
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image:url(Media/background.jpg);
+    background-size: cover;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 0%;
+    
+}
+h1{
+    text-align: center;
+    font-size: 500%;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 25px;    
+}
+ul{
+    list-style-type: none; /*gets rid of bulletpoints*/
+    margin: 0;
+    padding: 0; /* to remove browser default settings*/
+
+}
+
+li{
+    float: left;
+    width:16.6%;
+    margin-bottom:3%;
+    font-size: 100%;
+
+}
+
+li a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10%;
+    text-align: center;
+    background-color: cornflowerblue;
+    border-radius: 20px;
+    
+    
+}
+
+li a:visited{
+    background-color: cornflowerblue;
+    color: white;
+    text-decoration: none;
+}
+
+/* Learned how to add an active link on w3schools website*/
+
+li a.active{
+    background-color: lightgreen;
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover:not(.active){
+    background-color: lightgreen;
+    color: white;
+    text-decoration: none;
+}
+/* I wanted my footer to be the entire width of the page so I changed the margin left/right of the BODY to 0%*/
+footer{
+    color: white;
+    background-color: darkgrey;
+    width: 100%;
+    overflow: auto;
+    
+}
+#Information{
+    border-bottom: 2px;
+    border-bottom-color: white;
+    border-bottom-style:double;
+    float:left;
+    margin-left: 10%;
+    margin-bottom: 2%;
+
+}
+#Socialmedia{
+    border-bottom: 2px;
+    border-bottom-color: white;
+    border-bottom-style: double;
+    float:right;
+    margin-right: 10%;
+}

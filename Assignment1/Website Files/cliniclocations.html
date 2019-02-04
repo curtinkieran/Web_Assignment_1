@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+        <title>Clinic Locations
+        </title>
+        <link rel=stylesheet type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+        <style>
+            h2{
+                color: cornflowerblue;
+                text-align: center;
+                text-decoration: underline;
+                font-size: 250%;
+            }
+            table{
+                width:85%;
+                height: 40%;
+                text-align: center;
+            }
+            th{
+                color: white;
+                background-color: lightgreen;
+                padding: 1%
+            }
+            table tr:nth-child(even){
+                background-color: aliceblue;
+                
+            }
+            table tr:nth-child(odd){
+                background-color: lightgrey;
+            }
+            table,th, td{
+                border: 2px;
+                border-color: cornflowerblue;
+                border-style: groove;
+                border-collapse: collapse;
+            }
+            td{
+                text-align: center;
+                padding: 2%
+            }
+            /* Styling the table to change colour.  Modeled on code from w3schools*/
+            table tr:hover{
+                background-color: cornflowerblue;
+                color: white;
+            }
+            #table{
+                padding-left: 13%;
+                padding-bottom: 5%;
+            }
+            /*"times" was individually styled because the column was being rendered too narrow and it did not look good*/
+            #times{
+                width: 20%
+            }
+            #main{
+                text-align: center;
+            }
+       
+        </style>
+    </head>
+    
+    <body>
+        <h1> Cork Prosthetic Clinic </h1>
+        
+        <ul><li><a href="home.html"> Home </a></li>
+            <li><a href="prosthetics.html"> Prosthetics </a></li>
+            <li><a href="orthotics.html"> Orthotics </a></li>
+            <li><a href="gallery.html"> Gallery </a></li>
+            <li><a class="active" href="cliniclocations.html"> Clinic Locations</a></li>
+            <li><a href="resources.html"> Resources </a></li>
+        </ul>
+        
+        <h2>Locations and Times</h2>
+        <p id="main">We run <b>5 satelite clinics</b> in County Cork as well as our main Prosthetic Clinic in Cork City.<br/>
+        The opening times and addresses for each clinic are as follows:</p>
+        
+        <div id="table">
+            <!--I added the HTML time tag here.  I know this is not an active website, but it would allow search engines to return more accurate results-->
+        <table>
+            <tr>
+                <th>Location</th>
+                <th id="times">Times</th>
+                <th>Address</th>
+                <th>Disabled parking</th>
+            </tr>
+            <tr>
+                <td>Cork City</td>
+                <td><time datetime="09:00">9:00-16:30</time></td>
+                <td>Charity Prosthetic Clinic, Cork City</td>
+                <td>Yes - Contact reception in advance to allow arrangement of disabled parking permit</td>
+            </tr>
+            <tr>
+                <td>Fermoy</td>
+                <td><time datetime="10:00">10:00-13:00</time></td>
+                <td>20 O'Connell Street, Fermoy</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Youghal</td>
+                <td><time datetime="14:00">14:00-17:30</time></td>
+                <td>Old Waterford Road, Youghal, East Cork</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Skibereen</td>
+                <td><time datetime="13:00">13:00-15:30</time></td>
+                <td>Butcher's Lane, Skibereen</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Mallow - First Monday of the month</td>
+                <td><time datetime="09:00">9:00-15:30</time></td>
+                <td>Main Street, Mallow</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Mitchelstown - First Friday of each month</td>
+                <td><time datetime="13:00">13:00-17:00</time></td>
+                <td>Unit 5 Ballyboggin Industrial Estate</td>
+                <td>Yes</td>
+            </tr>
+        </table>
+        </div>
+        
+        <footer>
+            <div id="Information">
+            <p>Cork Prosthetic Clinic</p>
+            <p>123 Fake Street</p>
+            <p>Cork City</p>
+            <p>021-4627123</p>
+            </div>
+            <div id="Socialmedia">
+            <p>corkprostheticclinic@gmail.com</p>
+            <p>Find us on Facebook and Instagram also!</p>
+                <a href="https://www.facebook.com/OttobockIreland/"><img src="Media/facebook.png" alt="Facebook" style="height:50px; padding-left: 20%"></a>
+                <a href="https://www.instagram.com/explore/locations/1511295572466194/ottobock-ireland/?hl=en"><img src="Media/instagram.png" alt="Instagram" style="height:50px; float: right; padding-right: 20%"></a>
+            </div>
+        </footer>
+        
+    </body>
+    
+</html>
